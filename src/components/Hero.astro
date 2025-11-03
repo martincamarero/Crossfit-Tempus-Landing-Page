@@ -3,55 +3,73 @@ import Header from '../components/Header.astro';
 
 ---
 
-<div class="absolute z-0 rounded-full blur-[60px] w-[60vw] h-[60vw] bg-[radial-gradient(circle,#8fbcff,transparent_100%)] top-[-15%] left-[-10%] [animation:float-1_15s_ease-in-out_infinite_alternate]"></div>
-<section class="flex w-screen h-screen relative flex-col md:flex-row z-10">
-    <div class="sm:w-3/4 px-4 flex flex-col gap-5 ">
+<section class="relative flex w-screen h-screen flex-col md:flex-row overflow-hidden">
+  
+  <div class="relative z-10 sm:w-3/4 px-4 flex flex-col gap-5 bg-[#c5eeff]">
+    
+    <div class="absolute inset-0 -z-10 pointer-events-none">
+      <div class="absolute rounded-full blur-[60px] w-[60vw] h-[60vw]
+                  bg-[radial-gradient(circle,white,transparent_100%)]
+                  top-[-30%] left-[-50%]
+                  [animation:float-1_15s_ease-in-out_infinite_alternate]">
+      </div>
+    </div>
+
     <Header />
-    <div class="color-light absolute"></div>
-    <h3 class=" lg:text-8xl md:text-7xl text-4xl font-extrabold text-primary -tracking-tight"><span class="text-outline-blue">SHAPE</span> YOUR<br>IDEAL BODY</h3>
-    <p class=" text-primary md:w-3/4">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Asperiores soluta corporis ducimus ipsa omnis velit quos possimus magni corrupti ea dolor nihil eveniet, fugit necessitatibus deleniti amet illum nemo suscipit.</p>
-    <button class="rounded-2xl bg-primary text-white  py-1.5 max-w-1/2">
-        Apúntate
+    <h1 class="lg:text-8xl md:text-7xl text-4xl font-extrabold text-primary -tracking-tight relative z-20">
+      <span class="text-outline-blue">Entrenamiento funcional en Toledo,</span><br>diseñado para principiantes.
+    </h1>
+    <p class="text-primary md:w-3/4 relative z-20">
+      Recupera tu energía, fuerza y salud con un entrenamiento guiado, seguro y adaptado a ti.
+    </p>
+    <button class="rounded-2xl bg-primary text-white py-1.5 max-w-1/2 relative z-20 cursor-pointer">
+      Quiero más información por WhatsApp
     </button>
-
-    <div class="flex flex-wrap gap-6">
-        <div class="flex gap-4 items-center">
-            <div class="flex flex-col bg-transparent"><span class="text-primary font-extrabold text-2xl">+ 140</span><span class="text-light">EXPERT COACHES</span></div>
-            <div class="flex flex-col bg-transparent"><span class="text-primary font-extrabold text-2xl">+ 978</span><span class="text-light">MEMBERS JOINED</span></div>
-            <div class="flex flex-col bg-transparent"><span class="text-primary font-extrabold text-2xl">+ 50</span><span class="text-light">FITNESS PROGRAMS</span></div>
-        </div>
-        <div class="flex gap-2 bg-gray-200 p-3 rounded-2xl">
-            <svg class="size-15 text-primary" width="800px" height="800px" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
-
-            <g id="layer1">
-
-            <path d="M 0 2 L 0 18 L 20 18 L 20 17 L 1 17 L 1 2 L 0 2 z M 10 3 L 10 16 L 11 16 L 11 4 L 12 4 L 12 16 L 13 16 L 13 3 L 10 3 z M 2 6 L 2 16 L 3 16 L 3 7 L 4 7 L 4 16 L 5 16 L 5 6 L 2 6 z M 6 9 L 6 16 L 7 16 L 7 10 L 8 10 L 8 16 L 9 16 L 9 9 L 6 9 z M 14 12 L 14 16 L 15 16 L 15 13 L 16 13 L 16 16 L 17 16 L 17 12 L 14 12 z " style="fill:currentColor;fill-opacity:1;stroke:none;stroke-width:0px;"/>
-
-            </g>
-
-            </svg>
-            <div class="flex flex-col gap-1">
-                <span class="text-light">Calories burned</span>
-                <span class="text-primary font-extrabold text-2xl">220 kcal</span>
-            </div>
-        </div>
+    <div class="flex flex-wrap gap-6"> 
+        <div class="flex gap-4 items-center"> 
+            <div class="flex flex-col bg-transparent">
+                <span class="text-primary font-extrabold text-2xl text-center">+ 7 AÑOS</span>
+                <span class="text-light">AÑOS DE EXPERIENCIA</span>
+            </div> <div class="flex flex-col bg-transparent">
+                <span class="text-primary font-extrabold text-2xl text-center">4.9/5</span>
+                <span class="text-light">VALORACIÓN MEDIA</span>
+            </div> 
+            <div class="flex flex-col bg-transparent">
+                <span class="text-primary font-extrabold text-2xl text-center">+ 10</span>
+                <span class="text-light">ENTRENADORES</span>
+            </div> 
+        </div> 
+        <div class="flex gap-2 bg-[#9dd0ff] p-3 rounded-2xl border-3 border-white [box-shadow:0_0_20px_rgba(255,255,255,0.3)]"> 
+            <svg class="size-15 text-[#0b66bb]" width="800px" height="800px" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"> 
+                <g id="layer1"> 
+                    <path d="M 0 2 L 0 18 L 20 18 L 20 17 L 1 17 L 1 2 L 0 2 z M 10 3 L 10 16 L 11 16 L 11 4 L 12 4 L 12 16 L 13 16 L 13 3 L 10 3 z M 2 6 L 2 16 L 3 16 L 3 7 L 4 7 L 4 16 L 5 16 L 5 6 L 2 6 z M 6 9 L 6 16 L 7 16 L 7 10 L 8 10 L 8 16 L 9 16 L 9 9 L 6 9 z M 14 12 L 14 16 L 15 16 L 15 13 L 16 13 L 16 16 L 17 16 L 17 12 L 14 12 z " style="fill:currentColor;fill-opacity:1;stroke:none;stroke-width:0px;"/> 
+                </g> 
+            </svg> 
+            <div class="flex flex-col gap-1"> 
+                <span class="text-primary">Calorías quemadas</span> 
+                <span class="text-primary text-2xl">520 kcal</span> 
+            </div> 
+        </div> 
+    </div> 
+    <div class="flex gap-4"> 
+        <button class="bg-primary text-white px-8 py-1 cursor-pointer">Servicios</button> 
+        <button class="text-primary bg-transparent border-2 border-primary cursor-pointer px-8 py-1 ">Instalaciones</button> 
+    </div> 
+</div>
     </div>
-    <div>
-        <button class="">Get Started</button>
-        <button>Learn More</button>
-    </div>
-    </div>
-    <div class="sm:w-1/4 bg-primary">
-        <header>
-            <button></button>
-        </header>
-            <div>
-            <svg></svg>
-            <div>
-                <span>Calories burned</span>
-                <span>220 kcal</span>
-            </div>
-        </div>
-    </div>
-    <img src="" alt="">
+<img 
+    class="absolute 
+            left-2/3 
+           z-20 md:z-30  
+           h-[80%] md:h-auto md:w-auto" 
+    src="./img-hero.png" 
+    alt="Entrenamiento funcional guiado"
+  >
+  <div class="sm:w-1/4 bg-primary relative z-10">
+    <header class="size-20 flex items-center w-full justify-center">
+        <button class="bg-trasparent border-2 border-white text-white rounded-2xl px-6 py-1 cursor-pointer">
+            Apúntate
+        </button>
+    </header>
+  </div>
 </section>
