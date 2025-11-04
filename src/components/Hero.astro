@@ -3,9 +3,9 @@ import Header from '../components/Header.astro';
 
 ---
 
-<section class="relative flex w-screen h-screen flex-col md:flex-row overflow-hidden">
+<section class="relative flex w-screen min-h-screen flex-col md:flex-row overflow-hidden">
   
-  <div class="relative z-10 sm:w-3/4 px-4 flex flex-col gap-5 bg-[#c5eeff]">
+  <div class="relative z-10 sm:w-3/4 px-8 flex flex-col gap-8 bg-[#c0d1db]">
     
     <div class="absolute inset-0 -z-10 pointer-events-none">
       <div class="absolute rounded-full blur-[60px] w-[60vw] h-[60vw]
@@ -16,13 +16,17 @@ import Header from '../components/Header.astro';
     </div>
 
     <Header />
+    <h2 class="rounded-4xl text-2xl bg-[white] text-[#455d77] py-5 w-fit px-2 relative z-20 shadow-lg">
+      <span class="rounded-4xl px-3 py-2 bg-light text-white ">Empieza hoy</span> con Tempus Functional Fitness.
+    </h2>
     <h1 class="lg:text-8xl md:text-7xl text-4xl font-extrabold text-primary -tracking-tight relative z-20">
-      <span class="text-outline-blue">Entrenamiento funcional en Toledo,</span><br>diseñado para principiantes.
+      <span class="text-outline-blue">Entrenamiento funcional en Toledo,</span> diseñado para principiantes.
     </h1>
-    <p class="text-primary md:w-3/4 relative z-20">
+    <p class="text-primary text-2xl md:w-3/4 relative z-20">
       Recupera tu energía, fuerza y salud con un entrenamiento guiado, seguro y adaptado a ti.
     </p>
-    <button class="rounded-2xl bg-primary text-white py-1.5 max-w-1/2 relative z-20 cursor-pointer">
+    <button class="flex gap-3 items-center justify-center rounded-4xl text-2xl bg-light text-white py-1.5 w-1/3 relative z-20 cursor-pointer shadow-lg">
+      <svg class="size-10" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 175.216 175.552"><defs><linearGradient id="b" x1="85.915" x2="86.535" y1="32.567" y2="137.092" gradientUnits="userSpaceOnUse"><stop offset="0" stop-color="#57d163"/><stop offset="1" stop-color="#23b33a"/></linearGradient><filter id="a" width="1.115" height="1.114" x="-.057" y="-.057" color-interpolation-filters="sRGB"><feGaussianBlur stdDeviation="3.531"/></filter></defs><path fill="#b3b3b3" d="m54.532 138.45 2.235 1.324c9.387 5.571 20.15 8.518 31.126 8.523h.023c33.707 0 61.139-27.426 61.153-61.135.006-16.335-6.349-31.696-17.895-43.251A60.75 60.75 0 0 0 87.94 25.983c-33.733 0-61.166 27.423-61.178 61.13a60.98 60.98 0 0 0 9.349 32.535l1.455 2.312-6.179 22.558zm-40.811 23.544L24.16 123.88c-6.438-11.154-9.825-23.808-9.821-36.772.017-40.556 33.021-73.55 73.578-73.55 19.681.01 38.154 7.669 52.047 21.572s21.537 32.383 21.53 52.037c-.018 40.553-33.027 73.553-73.578 73.553h-.032c-12.313-.005-24.412-3.094-35.159-8.954zm0 0" filter="url(#a)"/><path fill="#fff" d="m12.966 161.238 10.439-38.114a73.42 73.42 0 0 1-9.821-36.772c.017-40.556 33.021-73.55 73.578-73.55 19.681.01 38.154 7.669 52.047 21.572s21.537 32.383 21.53 52.037c-.018 40.553-33.027 73.553-73.578 73.553h-.032c-12.313-.005-24.412-3.094-35.159-8.954z"/><path fill="url(#linearGradient1780)" d="M87.184 25.227c-33.733 0-61.166 27.423-61.178 61.13a60.98 60.98 0 0 0 9.349 32.535l1.455 2.312-6.179 22.559 23.146-6.069 2.235 1.324c9.387 5.571 20.15 8.518 31.126 8.524h.023c33.707 0 61.14-27.426 61.153-61.135a60.75 60.75 0 0 0-17.895-43.251 60.75 60.75 0 0 0-43.235-17.929z"/><path fill="url(#b)" d="M87.184 25.227c-33.733 0-61.166 27.423-61.178 61.13a60.98 60.98 0 0 0 9.349 32.535l1.455 2.313-6.179 22.558 23.146-6.069 2.235 1.324c9.387 5.571 20.15 8.517 31.126 8.523h.023c33.707 0 61.14-27.426 61.153-61.135a60.75 60.75 0 0 0-17.895-43.251 60.75 60.75 0 0 0-43.235-17.928z"/><path fill="#fff" fill-rule="evenodd" d="M68.772 55.603c-1.378-3.061-2.828-3.123-4.137-3.176l-3.524-.043c-1.226 0-3.218.46-4.902 2.3s-6.435 6.287-6.435 15.332 6.588 17.785 7.506 19.013 12.718 20.381 31.405 27.75c15.529 6.124 18.689 4.906 22.061 4.6s10.877-4.447 12.408-8.74 1.532-7.971 1.073-8.74-1.685-1.226-3.525-2.146-10.877-5.367-12.562-5.981-2.91-.919-4.137.921-4.746 5.979-5.819 7.206-2.144 1.381-3.984.462-7.76-2.861-14.784-9.124c-5.465-4.873-9.154-10.891-10.228-12.73s-.114-2.835.808-3.751c.825-.824 1.838-2.147 2.759-3.22s1.224-1.84 1.836-3.065.307-2.301-.153-3.22-4.032-10.011-5.666-13.647"/></svg>
       Quiero más información por WhatsApp
     </button>
     <div class="flex flex-wrap gap-6"> 
@@ -39,8 +43,8 @@ import Header from '../components/Header.astro';
                 <span class="text-light">ENTRENADORES</span>
             </div> 
         </div> 
-        <div class="flex gap-2 bg-[#9dd0ff] p-3 rounded-2xl border-3 border-white [box-shadow:0_0_20px_rgba(255,255,255,0.3)]"> 
-            <svg class="size-15 text-[#0b66bb]" width="800px" height="800px" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"> 
+        <div class="flex gap-2 bg-[#89bdd5] p-3 rounded-2xl border-3 border-white [box-shadow:0_0_20px_rgba(255,255,255,0.3)]"> 
+            <svg class="size-15 text-[#156099]" width="800px" height="800px" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"> 
                 <g id="layer1"> 
                     <path d="M 0 2 L 0 18 L 20 18 L 20 17 L 1 17 L 1 2 L 0 2 z M 10 3 L 10 16 L 11 16 L 11 4 L 12 4 L 12 16 L 13 16 L 13 3 L 10 3 z M 2 6 L 2 16 L 3 16 L 3 7 L 4 7 L 4 16 L 5 16 L 5 6 L 2 6 z M 6 9 L 6 16 L 7 16 L 7 10 L 8 10 L 8 16 L 9 16 L 9 9 L 6 9 z M 14 12 L 14 16 L 15 16 L 15 13 L 16 13 L 16 16 L 17 16 L 17 12 L 14 12 z " style="fill:currentColor;fill-opacity:1;stroke:none;stroke-width:0px;"/> 
                 </g> 
@@ -52,24 +56,49 @@ import Header from '../components/Header.astro';
         </div> 
     </div> 
     <div class="flex gap-4"> 
-        <button class="bg-primary text-white px-8 py-1 cursor-pointer">Servicios</button> 
-        <button class="text-primary bg-transparent border-2 border-primary cursor-pointer px-8 py-1 ">Instalaciones</button> 
+        <button class="bg-primary text-white px-15 py-2 cursor-pointer">Servicios</button> 
+        <button class="text-primary bg-transparent border-2 border-primary cursor-pointer px-15 py-2">Instalaciones</button> 
     </div> 
 </div>
     </div>
 <img 
-    class="absolute 
-            left-2/3 
-           z-20 md:z-30  
-           h-[80%] md:h-auto md:w-auto" 
-    src="./img-hero.png" 
-    alt="Entrenamiento funcional guiado"
-  >
-  <div class="sm:w-1/4 bg-primary relative z-10">
-    <header class="size-20 flex items-center w-full justify-center">
-        <button class="bg-trasparent border-2 border-white text-white rounded-2xl px-6 py-1 cursor-pointer">
+  class="absolute 
+         left-[75%] 
+         top-1/2 
+         -translate-x-1/2 
+         -translate-y-1/2 
+         md:h-auto 
+         md:w-auto 
+         h-[80%] 
+         z-50 
+         mt-24" 
+  src="./img-hero.png" 
+  alt="Entrenamiento funcional guiado"
+/>
+<!-- Círculo grande -->
+<div
+    class="absolute rounded-full border-[20px] border-[#9ec4d8] w-[600px] h-[600px] left-[65%] top-3/5 -translate-x-[40%] -translate-y-[40%] z-30"
+  ></div>
+
+  <!-- Círculo pequeño -->
+  <div
+    class="absolute rounded-full border-[10px] border-primary w-[450px] h-[450px] top-3/5 left-[65%] -translate-x-[40%] -translate-y-[40%] z-30"
+  ></div>
+  <div class="sm:w-1/4 bg-[#e5f0f2] flex flex-col relative z-40">
+    <header class="size-25 flex items-center w-full justify-center">
+        <button  class="bg-primary shadow-lg text-white px-8 py-2 cursor-pointer relative z-60">
             Apúntate
         </button>
     </header>
+    <div class="w-fit ml-[30%] mt-[15%] bg-[#89bdd5] p-4 rounded-xl shadow-xl flex flex-col scale-120  z-20 text-primary self-center">
+        <svg xmlns="http://www.w3.org/2000/svg" class="h-10 w-10 text-custom-blue-mid" viewBox="0 0 20 20" fill="currentColor">
+            <path fill-rule="evenodd" d="M3.172 5.172a4 4 0 015.656 0L10 6.343l1.172-1.171a4 4 0 115.656 5.656L10 17.657l-6.828-6.829a4 4 0 010-5.656z" clip-rule="evenodd" />
+        </svg>
+        <div>
+            <span class="text-gray-600 text-sm">Heart Rate</span>
+            <p class="font-bold text-custom-blue-dark text-2xl">116 bpm</p>
+        </div>
+    </div>
+
   </div>
 </section>

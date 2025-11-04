@@ -10,11 +10,11 @@ body {
     /* color: #8fbcff; */
 }
 @theme {
-    --color-primary: #0d0d54;
-    --color-light: #48e;
+    --color-primary: #023c72;
+    --color-light: #1b78bd;
     --color-prueba: ;
 }
 .text-outline-blue {
     color: transparent;
-    -webkit-text-stroke: 2px var(--color-light);
+    -webkit-text-stroke: 2px var(--color-primary);
 }
