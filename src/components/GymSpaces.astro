@@ -2,8 +2,8 @@
   <!-- Contenedor del carrusel -->
   <div class="instalaciones-scroll relative">
     <!-- SECCIÓN 1 -->
-    <div class="instalaciones-section relative h-screen flex flex-col md:flex-row">
-      <div class="w-full md:w-1/2 h-1/2 md:h-full relative overflow-hidden bg-[#E8F0F8]">
+    <div class="instalaciones-section flex flex-col md:flex-row">
+      <div class="sm:w-1/2">
         <img
           src="pesas.png"
           alt="Sala de Pesas"
@@ -12,7 +12,7 @@
       </div>
 
       <div
-        class="w-full md:w-1/2 h-1/2 md:h-full flex items-center justify-center bg-[#E8F0F8] p-10"
+        class="w-full md:w-1/2 flex items-center justify-center bg-[#E8F0F8] p-10 min-h-fit"
       >
         <div class="max-w-lg float-animation">
           <h6 class="bg-[#D2E4FA] text-blue-800 font-semibold px-4 py-1 rounded mb-4 w-fit">
@@ -29,9 +29,9 @@
       </div>
     </div>
     <!-- SECCIÓN 2 -->
-    <div class="instalaciones-section relative h-screen flex flex-col-reverse md:flex-row">
+    <div class="instalaciones-section relative flex flex-col-reverse md:flex-row">
       <div
-        class="w-full md:w-1/2 h-1/2 md:h-full flex items-center justify-center bg-[#E8F0F8] p-10"
+        class="w-full md:w-1/2 flex items-center justify-center bg-[#E8F0F8] p-10"
       >
         <div class="max-w-lg float-animation">
           <h6 class="bg-[#D2E4FA] text-blue-800 font-semibold px-4 py-1 rounded mb-4 w-fit">
@@ -48,7 +48,7 @@
           </p>
         </div>
       </div>
-      <div class="w-full md:w-1/2 h-1/2 md:h-full relative overflow-hidden bg-[#E8F0F8]">
+      <div class="sm:w-1/2">
         <img
           src="stretch-core.png"
           alt="Zona de Estiramiento"
@@ -58,9 +58,18 @@
     </div>
 
     <!-- SECCIÓN 3 -->
-    <div class="instalaciones-section relative h-screen flex flex-col md:flex-row-reverse">
+    <div class="instalaciones-section relative flex flex-col md:flex-row">
       <div
-        class="w-full md:w-1/2 h-1/2 md:h-full flex items-center justify-center bg-[#E8F0F8] p-10 order-2 md:order-1"
+        class="sm:w-1/2"
+      >
+        <img
+          src="aseos.png"
+          alt="Vestuarios"
+          class="w-full h-full object-cover transition-all duration-1000"
+        />
+      </div>
+      <div
+        class="w-full md:w-1/2 flex items-center justify-center bg-[#E8F0F8] p-10 order-2 md:order-1"
       >
         <div class="max-w-lg float-animation">
           <h6 class="bg-[#D2E4FA] text-blue-800 font-semibold px-4 py-1 rounded mb-4 w-fit">
@@ -76,16 +85,8 @@
             “Recupera la energía y prepárate para tu próximo desafío.”
           </p>
         </div>
-      </div>
+      
 
-      <div
-        class="w-full md:w-1/2 h-1/2 md:h-full relative overflow-hidden bg-[#E8F0F8] order-1 md:order-2"
-      >
-        <img
-          src="aseos.png"
-          alt="Vestuarios"
-          class="w-full h-full object-cover transition-all duration-1000"
-        />
       </div>
     </div>
   </div>

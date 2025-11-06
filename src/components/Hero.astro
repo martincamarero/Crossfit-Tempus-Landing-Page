@@ -2,8 +2,8 @@
 import Header from '../components/Header.astro'
 ---
 
-<section class="relative flex w-screen flex-col md:flex-row overflow-hidden">
-  <div class="relative z-10 md:w-3/4 py-6 px-8 flex flex-col gap-5 md:gap-8 bg-[#c0d1db]">
+<section class="relative flex w-screen min-h-screen flex-col md:flex-row overflow-hidden">
+  <div class="relative z-10 py-6 px-8 flex flex-col gap-5 md:gap-8 bg-[#c0d1db]">
     <div class="absolute inset-0 -z-10 pointer-events-none">
       <div
         class="absolute rounded-full blur-[60px] w-[60vw] h-[60vw]
@@ -29,7 +29,7 @@ import Header from '../components/Header.astro'
       >.
     </h2>
     <h1
-      class="lg:text-8xl md:text-7xl text-4xl font-extrabold text-primary -tracking-tight relative z-20 md:text-outline-blue"
+      class="xl:text-8xl md:text-6xl text-4xl font-extrabold text-primary -tracking-tight relative z-20 md:text-outline-blue"
     >
       <span class="text-primary">Entrenamiento funcional en Toledo,</span> diseñado para principiantes.
     </h1>
@@ -121,11 +121,12 @@ import Header from '../components/Header.astro'
       >
       <button
         class="w-full md:w-fit text-primary bg-transparent border-2 border-primary cursor-pointer px-8 md:px-15 py-2"
+        onclick="window.location.href = '/our-spaces'"
         >Instalaciones</button
       >
     </div>
   </div>
-  <img
+  <!-- <img
     class="absolute
          left-[75%]
          top-1/2
@@ -141,42 +142,16 @@ import Header from '../components/Header.astro'
          pointer-events-none"
     src="./img-hero.png"
     alt="Entrenamiento funcional guiado"
-  />
+  /> -->
   <!-- Círculo grande -->
-  <div
-    class="hidden md:block absolute rounded-full border-[20px] border-[#9ec4d8] w-[600px] h-[600px] left-[65%] top-3/5 -translate-x-[40%] -translate-y-[40%] z-30"
+  <!-- <div
+    class="hidden lg:block absolute rounded-full border-[20px] border-[#9ec4d8] w-[600px] h-[600px] left-[65%] top-3/5 -translate-x-[40%] -translate-y-[40%] z-30"
   >
-  </div>
+  </div> -->
 
   <!-- Círculo pequeño -->
-  <div
-    class="hidden md:block absolute rounded-full border-[10px] border-primary w-[450px] h-[450px] top-3/5 left-[65%] -translate-x-[40%] -translate-y-[40%] z-30"
+  <!-- <div
+    class="hidden lg:block absolute rounded-full border-[10px] border-primary w-[450px] h-[450px] top-3/5 left-[65%] -translate-x-[40%] -translate-y-[40%] z-30"
   >
-  </div>
-  <div class="hidden md:block sm:w-1/4 bg-[#e5f0f2] flex flex-col relative z-40">
-    <header class="size-25 flex items-center w-full justify-center">
-      <button class="bg-primary shadow-lg text-white px-8 py-2 cursor-pointer relative z-60">
-        Apúntate
-      </button>
-    </header>
-    <div
-      class="w-fit ml-[30%] mt-[15%] bg-[#89bdd5] p-4 rounded-xl shadow-xl flex flex-col scale-120 z-20 text-primary self-center"
-    >
-      <svg
-        xmlns="http://www.w3.org/2000/svg"
-        class="h-10 w-10 text-custom-blue-mid"
-        viewBox="0 0 20 20"
-        fill="currentColor"
-      >
-        <path
-          fill-rule="evenodd"
-          d="M3.172 5.172a4 4 0 015.656 0L10 6.343l1.172-1.171a4 4 0 115.656 5.656L10 17.657l-6.828-6.829a4 4 0 010-5.656z"
-          clip-rule="evenodd"></path>
-      </svg>
-      <div>
-        <span class="text-gray-600 text-sm">Heart Rate</span>
-        <p class="font-bold text-custom-blue-dark text-2xl">116 bpm</p>
-      </div>
-    </div>
-  </div>
+  </div> -->
 </section>
