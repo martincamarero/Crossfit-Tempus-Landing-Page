@@ -9,6 +9,9 @@ body {
     box-sizing: border-box;
     /* color: #8fbcff; */
 }
+html {
+    overflow-y: scroll;
+}
 @theme {
     --color-primary: #023c72;
     --color-light: #1b78bd;
