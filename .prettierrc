@@ -1,0 +1,11 @@
+{
+  "plugins": ["prettier-plugin-astro"],
+  "pluginSearchDirs": false,
+  "tabWidth": 2,
+  "semi": false,
+  "singleQuote": true,
+  "printWidth": 100,
+  "bracketSpacing": true,
+  "astroAllowShorthand": true,
+  "astroSortOrder": "markup | scripts | styles"
+}
