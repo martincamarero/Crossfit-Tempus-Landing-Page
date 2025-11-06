@@ -1,60 +1,151 @@
-<section class="bg-[#F5F9FC] min-h-screen flex items-center justify-center relative">
-  <div class=" bg-[#E8F0F8] w-[80%] max-w-6xl mx-auto rounded-3xl shadow-2xl backdrop-blur-sm z-10 p-8 flex items-center justify-center relative">
+<section id="instalaciones" class="relative bg-[#F5F9FC] text-primary overflow-hidden rounded-3xl shadow-sm">
+  <style>
+    @keyframes float {
+      0%, 100% { transform: translateY(0); }
+      50% { transform: translateY(-10px); }
+    }
+    .float-animation {
+      animation: float 6s ease-in-out infinite;
+    }
+    .instalaciones-scroll {
+      scroll-snap-type: y mandatory;
+      height: 100vh;
+      overflow-y: auto;
+      -webkit-overflow-scrolling: touch;
+    }
+    .instalaciones-section {
+      scroll-snap-align: start;
+      scroll-snap-stop: always;
+    }
+    .dots-visible {
+      opacity: 1;
+      pointer-events: auto;
+    }
+    .dots-hidden {
+      opacity: 0;
+      pointer-events: none;
+    }
+  </style>
 
-    <div class="w-full h-full flex flex-col items-center justify-center relative text-center">
-      
-      <h2 class="text-4xl font-extrabold text-primary mb-10 uppercase">CLASES</h2> 
-      
-      <div class="grid grid-cols-4 gap-6 relative w-full max-w-4xl place-items-center">
-        
-        <div class="relative h-56 md:h-64 rounded-xl overflow-hidden col-span-2 w-full">
-          <img src="DSC02090.JPEG" alt="Tempus Functional" class="w-full h-full object-cover">
-          <p class="absolute bottom-0 w-full p-3 text-center text-white font-bold text-lg bg-black/40">Tempus Functional</p>
-        </div>
+  <!-- Contenedor del carrusel -->
+  <div class="instalaciones-scroll relative">
 
-        <div class="relative h-56 md:h-64 rounded-xl overflow-hidden col-span-2 w-full">
-          <img src="DSC04747.JPEG" alt="Tempus Hybrid" class="w-full h-full object-cover">
-          <p class="absolute bottom-0 w-full p-3 text-center text-white font-bold text-lg bg-black/40">Tempus Hybrid</p>
-        </div>
-
-        <div class="relative h-64 md:h-72 rounded-xl overflow-hidden col-span-4 w-full">
-          <img src="DSC02598.JPG" alt="Tempus Stretching" class="w-full h-full object-cover">
-          <p class="absolute bottom-0 w-full p-3 text-center text-white font-bold text-lg bg-black/40">Tempus Stretching</p>
-        </div>
-
-        <div class="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 w-32 h-32 bg-white rounded-full z-10"></div>
-
-        <div class="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 w-24 h-24 bg-light rounded-full 
-          flex items-center justify-center cursor-pointer shadow-xl  ring-primary  z-20">
-    
-<svg
-  xmlns="http://www.w3.org/2000/svg"
-  width="56"
-  height="56"
-  viewBox="0 0 24 24"
-  fill="none"
-  stroke="#ffffff"
-  stroke-width="1.25"
-  stroke-linecap="round"
-  stroke-linejoin="round"
->
-  <path d="M2 12h1" />
-  <path d="M6 8h-2a1 1 0 0 0 -1 1v6a1 1 0 0 0 1 1h2" />
-  <path d="M6 7v10a1 1 0 0 0 1 1h1a1 1 0 0 0 1 -1v-10a1 1 0 0 0 -1 -1h-1a1 1 0 0 0 -1 1z" />
-  <path d="M9 12h6" />
-  <path d="M15 7v10a1 1 0 0 0 1 1h1a1 1 0 0 0 1 -1v-10a1 1 0 0 0 -1 -1h-1a1 1 0 0 0 -1 1z" />
-  <path d="M18 8h2a1 1 0 0 1 1 1v6a1 1 0 0 1 -1 1h-2" />
-  <path d="M22 12h-1" />
-</svg>
-          
-        </div>
-
+    <!-- SECCIÓN 1 -->
+    <div class="instalaciones-section relative h-screen flex flex-col md:flex-row">
+      <div class="w-full md:w-1/2 h-1/2 md:h-full relative overflow-hidden bg-[#E8F0F8]">
+        <img src="public/SalaPesas.png" alt="Sala de Pesas" class="w-full h-full object-cover transition-all duration-1000">
       </div>
 
-  <div class="absolute bottom-[-1rem] right-[-1rem] text-white font-bold text-base sm:text-xl py-3 pr-8 pl-16 bg-blue-500 [clip-path:polygon(10%_0,100%_0,100%_100%,0%_100%)] z-10">
-    Tempus
-  </div>
+      <div class="w-full md:w-1/2 h-1/2 md:h-full flex items-center justify-center bg-[#E8F0F8] p-10">
+        <div class="max-w-lg float-animation">
+          <h4 class="bg-[#D2E4FA] text-blue-800 font-semibold px-4 py-1 rounded mb-4 w-fit">INSTALACIÓN 01</h4>
+          <h2 class="text-4xl md:text-6xl font-extrabold text-primary leading-tight">Sala de Pesas</h2>
+          <p class="mt-6 text-base md:text-lg text-primary/80 leading-relaxed">
+            Entrena con equipos de fuerza de última generación en un entorno moderno y profesional.
+          </p>
+          <button class="mt-8 px-6 py-3 bg-primary text-white rounded-2xl font-medium shadow hover:brightness-110 transition-all duration-300">
+            Ver más →
+          </button>
+        </div>
+      </div>
+    </div>
 
+    <!-- SECCIÓN 2 -->
+    <div class="instalaciones-section relative h-screen flex flex-col md:flex-row">
+      <div class="w-full md:w-1/2 h-1/2 md:h-full flex items-center justify-center bg-[#E8F0F8] p-10 order-2 md:order-1">
+        <div class="max-w-lg float-animation">
+          <h4 class="bg-[#D2E4FA] text-blue-800 font-semibold px-4 py-1 rounded mb-4 w-fit">INSTALACIÓN 02</h4>
+          <h2 class="text-4xl md:text-6xl font-extrabold text-primary leading-tight">Vestuarios Premium</h2>
+          <p class="mt-6 text-base md:text-lg text-primary/80 leading-relaxed">
+            Disfruta de vestuarios amplios, limpios y totalmente equipados para tu comodidad.
+          </p>
+          <button class="mt-8 px-6 py-3 bg-primary text-white rounded-2xl font-medium shadow hover:brightness-110 transition-all duration-300">
+            Ver más →
+          </button>
+        </div>
+      </div>
+
+      <div class="w-full md:w-1/2 h-1/2 md:h-full relative overflow-hidden bg-[#E8F0F8] order-1 md:order-2">
+        <img src="public/Vestuarios.png" alt="Vestuarios" class="w-full h-full object-cover transition-all duration-1000">
+      </div>
+    </div>
+
+    <!-- SECCIÓN 3 -->
+    <div class="instalaciones-section relative h-screen flex flex-col md:flex-row">
+      <div class="w-full md:w-1/2 h-1/2 md:h-full relative overflow-hidden bg-[#E8F0F8]">
+        <img src="public/SalaStreching.png" alt="Zona de Estiramiento" class="w-full h-full object-cover transition-all duration-1000">
+      </div>
+
+      <div class="w-full md:w-1/2 h-1/2 md:h-full flex items-center justify-center bg-[#E8F0F8] p-10">
+        <div class="max-w-lg float-animation">
+          <h4 class="bg-[#D2E4FA] text-blue-800 font-semibold px-4 py-1 rounded mb-4 w-fit">INSTALACIÓN 03</h4>
+          <h2 class="text-4xl md:text-6xl font-extrabold text-primary leading-tight">Zona de Estiramiento</h2>
+          <p class="mt-6 text-base md:text-lg text-primary/80 leading-relaxed">
+            Un ambiente tranquilo ideal para yoga, estiramientos y meditación post entrenamiento.
+          </p>
+          <button class="mt-8 px-6 py-3 bg-primary text-white rounded-2xl font-medium shadow hover:brightness-110 transition-all duration-300">
+            Ver más →
+          </button>
+        </div>
+      </div>
     </div>
   </div>
+
+  <!-- Dots de navegación -->
+  <div id="instalaciones-dots"
+       class="fixed right-8 top-1/2 -translate-y-1/2 flex flex-col gap-4 z-50 opacity-0 transition-opacity duration-700 dots-hidden">
+    <button onclick="scrollToInstalacion(0)" class="w-3 h-3 rounded-full bg-primary/30 hover:bg-primary transition-all duration-300"></button>
+    <button onclick="scrollToInstalacion(1)" class="w-3 h-3 rounded-full bg-primary/30 hover:bg-primary transition-all duration-300"></button>
+    <button onclick="scrollToInstalacion(2)" class="w-3 h-3 rounded-full bg-primary/30 hover:bg-primary transition-all duration-300"></button>
+  </div>
+
+  <script>
+    const container = document.querySelector('#instalaciones .instalaciones-scroll');
+    const sections = container.querySelectorAll('.instalaciones-section');
+    const dots = document.querySelectorAll('#instalaciones-dots button');
+    const dotsContainer = document.getElementById('instalaciones-dots');
+    let isScrolling = false;
+
+    function scrollToInstalacion(index) {
+      if (!isScrolling) {
+        isScrolling = true;
+        sections[index].scrollIntoView({ behavior: 'smooth' });
+        updateDots(index);
+        setTimeout(() => { isScrolling = false; }, 1000);
+      }
+    }
+
+    function updateDots(index) {
+      dots.forEach((dot, i) => {
+        dot.className = `w-3 h-3 rounded-full transition-all duration-300 ${
+          i === index ? 'bg-primary scale-150' : 'bg-primary/30 hover:bg-primary hover:scale-150'
+        }`;
+      });
+    }
+
+    container.addEventListener('scroll', () => {
+      const index = Math.round(container.scrollTop / window.innerHeight);
+      updateDots(index);
+    });
+
+    updateDots(0);
+
+    // === Mostrar / ocultar los dots según scroll global ===
+    const observer = new IntersectionObserver(
+      (entries) => {
+        entries.forEach(entry => {
+          if (entry.isIntersecting) {
+            dotsContainer.classList.remove('dots-hidden');
+            dotsContainer.classList.add('dots-visible');
+          } else {
+            dotsContainer.classList.add('dots-hidden');
+            dotsContainer.classList.remove('dots-visible');
+          }
+        });
+      },
+      { threshold: 0.3 }
+    );
+
+    observer.observe(document.getElementById('instalaciones'));
+  </script>
 </section>
