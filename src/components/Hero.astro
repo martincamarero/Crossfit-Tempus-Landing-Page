@@ -2,7 +2,7 @@
 import Header from '../components/HeaderHero.astro'
 ---
 
-<section class="relative flex w-screen min-h-screen flex-col md:flex-row overflow-hidden">
+<section class="relative flex w-screen flex-col md:flex-row overflow-hidden">
   <div class="relative z-10 py-6 px-8 flex flex-col gap-5 md:gap-8 bg-[#c0d1db]">
     <div class="absolute inset-0 -z-10 pointer-events-none">
       <div
@@ -37,7 +37,9 @@ import Header from '../components/HeaderHero.astro'
       Recupera tu energía, fuerza y salud con un entrenamiento guiado, seguro y adaptado a ti.
     </p>
     <button
-      class="flex gap-4 items-center justify-center rounded-4xl text-sm md:text-2xl w-full sm:w-fit px-8 md:px-15 bg-light text-white py-2 relative z-20 cursor-pointer shadow-lg"
+      class="flex gap-4 items-center justify-center rounded-4xl text-sm md:text-2xl w-full sm:w-fit px-8 md:px-15 bg-light text-white py-2 relative z-20 cursor-pointer shadow-lg
+  transition-all duration-300 ease-out hover:shadow-xl hover:-translate-y-0.5 hover:bg-gradient-to-r hover:from-[bg-light] hover:to-[#156099]"
+      onclick="window.open('https://wa.me/+34679629454?text=Hola%20👋%0Ame%20gustaría%20recibir%20más%20información%20sobre%20las%20clases%20de%20Tempus%20Functional%20Fitness.', '_blank')"
     >
       <svg class="size-10" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 175.216 175.552"
         ><defs
