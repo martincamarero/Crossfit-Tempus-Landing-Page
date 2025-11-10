@@ -14,6 +14,60 @@ const { title } = Astro.props
       href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Oswald:wght@200..700&display=swap"
       rel="stylesheet"
     />
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "LocalBusiness",
+        "name": "CrossFit Functional Tempus",
+        "image": "https://tudominio.com/img/portada.jpg",
+        "url": "https://tudominio.com",
+        "telephone": "+34 679 62 94 54",
+        "address": {
+          "@type": "PostalAddress",
+          "streetAddress": "Avenida América 1",
+          "addressLocality": "Toledo",
+          "postalCode": "45004",
+          "addressCountry": "ES"
+        },
+        "openingHours": "Mo-Fr 07:00-22:00, Sa 09:00-14:00",
+        "sameAs": [
+          "https://www.instagram.com/crossfittempus",
+          "https://www.facebook.com/crossfittempus"
+        ],
+        "aggregateRating": {
+          "@type": "AggregateRating",
+          "ratingValue": "5",
+          "reviewCount": "85"
+        },
+        "faq": [
+          {
+            "@type": "Question",
+            "name": "¿Dónde está CrossFit Tempus?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Nos encontramos en Avenida América 1, 45004 Toledo."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "¿Necesito experiencia previa para entrenar?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "No, ofrecemos clases adaptadas a todos los niveles, desde principiantes hasta avanzados."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "¿Cómo puedo apuntarme?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Puedes contactarnos por WhatsApp o venir directamente al gimnasio, te esperamos!!"
+            }
+          }
+        ]
+      }
+    </script>
+
     <title>{title}</title>
   </head>
   <body class="m-0 p-0 box-border font-['Oswald'] relative overflow-x-hidden flex flex-col gap-10">

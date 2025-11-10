@@ -1,39 +1,112 @@
----
-
----
-
-<header class="flex items-center w-full justify-between max-w-screen py-2 px-10">
+<header
+  class="flex items-center justify-between w-full max-w-screen py-2 px-7 top-0 left-0 bg-white z-50 shadow-md"
+>
+  <!-- LOGO -->
   <img
     onclick="window.location.href='/'"
     class="md:w-36 w-24 cursor-pointer"
     src="./logo.png"
-    alt=""
+    alt="Logo"
   />
-  <nav>
-    <ul class="hidden md:flex gap-6 font-medium text-primary md:text-lg lg:text-2xl">
-      <li><a class="text-nowrap" href="/">Inicio</a></li>
-      <li><a class="text-nowrap" href="/about">Sobre Nosotros</a></li>
-      <li><a class="text-nowrap" href="/our-method">Cómo Entrenamos</a></li>
-      <li><a class="text-nowrap" href="/our-classes">Nuestras Clases</a></li>
-      <li><a class="text-nowrap" href="/our-spaces">Instalaciones</a></li>
+
+  <!-- NAV MENU (desktop) -->
+  <nav class="hidden md:block">
+    <ul class="flex gap-6 font-medium text-primary md:text-lg lg:text-2xl">
+      <li><a href="/">Inicio</a></li>
+      <li><a href="/about">Sobre Nosotros</a></li>
+      <li><a href="/our-method">Cómo Entrenamos</a></li>
+      <li><a href="/our-classes">Nuestras Clases</a></li>
+      <li><a href="/our-spaces">Instalaciones</a></li>
     </ul>
   </nav>
 
-  <svg
-    class="md:hidden"
-    xmlns="http://www.w3.org/2000/svg"
-    width="32"
-    height="32"
-    viewBox="0 0 24 24"
-    fill="none"
-    stroke="#000000"
-    stroke-width="1"
-    stroke-linecap="round"
-    stroke-linejoin="round"
-  >
-    <path d="M10 6h10"></path>
-    <path d="M4 12h16"></path>
-    <path d="M7 12h13"></path>
-    <path d="M4 18h10"></path>
-  </svg>
+  <!-- BOTÓN HAMBURGUESA -->
+  <button id="menuButton" class="md:hidden focus:outline-none z-50" aria-label="Abrir menú">
+    <!-- ICONO HAMBURGUESA -->
+    <svg
+      class="md:hidden cursor-pointer"
+      id="menuIcon"
+      xmlns="http://www.w3.org/2000/svg"
+      width="32"
+      height="32"
+      viewBox="0 0 24 24"
+      fill="none"
+      stroke="#000000"
+      stroke-width="1"
+      stroke-linecap="round"
+      stroke-linejoin="round"
+    >
+      <path d="M10 6h10"></path>
+      <path d="M4 12h16"></path>
+      <path d="M7 12h13"></path>
+      <path d="M4 18h10"></path>
+    </svg>
+
+    <!-- ICONO CERRAR -->
+    <svg
+      id="closeIcon"
+      xmlns="http://www.w3.org/2000/svg"
+      width="32"
+      height="32"
+      viewBox="0 0 24 24"
+      fill="none"
+      stroke="#000"
+      stroke-width="2"
+      stroke-linecap="round"
+      stroke-linejoin="round"
+      class="hidden transition-all duration-300"
+    >
+      <line x1="18" y1="6" x2="6" y2="18"></line>
+      <line x1="6" y1="6" x2="18" y2="18"></line>
+    </svg>
+  </button>
 </header>
+
+<!-- MENÚ MÓVIL Y OVERLAY (fuera del header para ocupar toda la pantalla) -->
+<div id="overlay" class="fixed inset-0 bg-trasparent hidden transition-opacity duration-300 z-40">
+</div>
+
+<nav
+  id="mobileMenu"
+  class="fixed top-0 right-0 h-full w-56 bg-white shadow-lg transform translate-x-full transition-transform duration-300 ease-in-out z-50 md:hidden"
+>
+  <ul class="flex flex-col mt-20 gap-6 font-medium text-primary text-lg px-6">
+    <li><a href="/">Inicio</a></li>
+    <li><a href="/about">Sobre Nosotros</a></li>
+    <li><a href="/our-method">Cómo Entrenamos</a></li>
+    <li><a href="/our-classes">Nuestras Clases</a></li>
+    <li><a href="/our-spaces">Instalaciones</a></li>
+  </ul>
+</nav>
+
+<script>
+  const menuButton = document.getElementById('menuButton')
+  const mobileMenu = document.getElementById('mobileMenu')
+  const menuIcon = document.getElementById('menuIcon')
+  const closeIcon = document.getElementById('closeIcon')
+  const overlay = document.getElementById('overlay')
+
+  menuButton.addEventListener('click', () => {
+    const isOpen = mobileMenu.classList.contains('translate-x-0')
+
+    // Alternar menú
+    mobileMenu.classList.toggle('translate-x-0')
+    mobileMenu.classList.toggle('translate-x-full')
+
+    // Mostrar / ocultar overlay
+    overlay.classList.toggle('hidden')
+
+    // Cambiar iconos
+    menuIcon.classList.toggle('hidden')
+    closeIcon.classList.toggle('hidden')
+  })
+
+  // Cerrar menú al pulsar overlay
+  overlay.addEventListener('click', () => {
+    mobileMenu.classList.add('translate-x-full')
+    mobileMenu.classList.remove('translate-x-0')
+    overlay.classList.add('hidden')
+    menuIcon.classList.remove('hidden')
+    closeIcon.classList.add('hidden')
+  })
+</script>
