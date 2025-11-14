@@ -16,24 +16,19 @@
     display: none !important;
   }
 
-  /* --- AJUSTES POR DEFECTO (PARA MÓVILES - MENOS DE 640px) --- */
   #wa-tooltip {
-    /* ¡CAMBIO CLAVE! 100% del viewport width menos el margen */
-    width: calc(100vw - 32px); /* 100vw menos 16px de margen a cada lado (ajustado en el HTML) */
+    width: calc(100vw - 32px);
     min-height: 180px; 
-    /* Colocamos a la izquierda para que el margen lo ajuste */
     left: 0; 
-    right: auto; /* Desactivamos el right para usar left y el margen */
-    bottom: 50px; /* Lo subimos un poco para que no moleste tanto abajo */
+    right: auto;
+    bottom: 50px;
   }
   
-  /* Ajuste del contenido del mensaje en móvil (fuente pequeña) */
   .wa-message-bubble {
-    font-size: 0.875rem; /* text-sm */
-    padding: 0.75rem; /* p-3 */
+    font-size: 0.875rem;
+    padding: 0.75rem;
   }
 
-  /* Ajuste del triángulo del mensaje (mantener) */
   #wa-tooltip .wa-message-bubble::before {
     content: '';
     position: absolute;
@@ -48,11 +43,10 @@
     transform-origin: 0% 100%; 
   }
 
-  /* AJUSTE CLAVE DEL PUNTERO: Lo centramos respecto al ícono, que está a la derecha */
   #wa-tooltip .wa-main-pointer {
     position: absolute;
     bottom: -15px; 
-    right: 18px; /* Mantenemos este valor para que apunte al ícono que sigue a la derecha */
+    right: 18px;
     width: 0;
     height: 0;
     border-left: 15px solid transparent;
