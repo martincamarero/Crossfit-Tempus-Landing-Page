@@ -5,7 +5,7 @@ import Layout from '../layouts/Layout.astro'
 import Ad from '../components/Ad.astro'
 ---
 
-<Layout title="Tempus Functional Fitness | Políticas de privacidad">
+<Layout title="Tempus Funcional Fitness | Políticas de privacidad">
   <Header />
   <section class="w-screen flex justify-center">
     <div class="relative z-10 w-full max-w-6xl px-6 md:px-12">
@@ -17,23 +17,23 @@ import Ad from '../components/Ad.astro'
               Políticas de privacidad
             </h5>
             <p class="mt-3 md:mt-4 text-base md:text-lg text-[#2f4f66]">
-              ¡Bienvenido a Crossfit Tempus!
+              ¡Bienvenido a Tempus Funcional Fitness!
             </p>
           </header>
 
           <article class="p-6 md:p-10 prose prose-lg md:prose-xl max-w-none text-[#334a5f]">
             <section>
               <p>
-                El sitio web https://crossfittempus.com/ es propiedad de Crossfit tempus, que es un
-                controlador de datos de tus datos personales.
+                El sitio web https://tempusfuncionalfitness.com/ es propiedad de Tempus Funcional
+                Fitness, que es un controlador de datos de tus datos personales.
               </p>
 
               <p>
                 Hemos adoptado esta Política de privacidad, que determina cómo procesamos la
-                información recopilada por https://crossfittempus.com/, que también proporciona las
-                razones por las que debemos recopilar ciertos datos personales sobre ti. Por lo
-                tanto, debes leer esta Política de privacidad antes de usar el sitio web de
-                https://crossfittempus.com/.
+                información recopilada por https://tempusfuncionalfitness.com/, que también
+                proporciona las razones por las que debemos recopilar ciertos datos personales sobre
+                ti. Por lo tanto, debes leer esta Política de privacidad antes de usar el sitio web
+                de https://tempusfuncionalfitness.com/.
               </p>
               <p>
                 Cuidamos tus datos personales y nos comprometemos a garantizar su confidencialidad y
@@ -46,11 +46,11 @@ import Ad from '../components/Ad.astro'
                 Información personal que recopilamos:
               </h5>
               <p>
-                Cuando visitas https://crossfittempus.com/, recopilamos automáticamente cierta
-                información sobre tu dispositivo, incluida información sobre tu navegador web,
-                dirección IP, zona horaria y algunas de las cookies instaladas en tu dispositivo.
-                Además, a medida que navegas, recopilamos información sobre las páginas web
-                individuales o los productos que ves, qué sitios web o términos de búsqueda te
+                Cuando visitas https://tempusfuncionalfitness.com/, recopilamos automáticamente
+                cierta información sobre tu dispositivo, incluida información sobre tu navegador
+                web, dirección IP, zona horaria y algunas de las cookies instaladas en tu
+                dispositivo. Además, a medida que navegas, recopilamos información sobre las páginas
+                web individuales o los productos que ves, qué sitios web o términos de búsqueda te
                 remitieron a la web y cómo interactúas. Nos referimos a esta información recopilada
                 automáticamente como «Información del dispositivo». Además, podemos recopilar los
                 datos personales que nos proporcionas (incluidos, entre otros, nombre, apellido,
@@ -84,7 +84,7 @@ import Ad from '../components/Ad.astro'
                 de las funciones del sitio web. Por ejemplo, no podrás recibir nuestro boletín ni
                 contactarnos directamente desde el sitio web. Los usuarios que no estén seguros de
                 qué información es obligatoria pueden ponerse en contacto con nosotros a través de
-                info@crossfittempus.com.
+                info@tempusfuncionalfitness.com.
               </p>
             </section>
 
@@ -174,13 +174,13 @@ import Ad from '../components/Ad.astro'
                 Si deseas comunicarte con nosotros para comprender más sobre esta Política o deseas
                 comunicarte con nosotros en relación con cualquier asunto sobre los derechos
                 individuales y tu información personal, puedes enviarnos un correo electrónico a
-                info@crossfittempus.com.
+                info@tempusfuncionalfitness.com.
               </p>
 
               <footer class="px-6 py-6 md:px-12 md:py-8 bg-white/90 border-t">
                 <div class="flex flex-col md:flex-row md:items-center md:justify-between gap-4">
                   <p class="text-sm text-[#4b6a7f]">
-                    © {new Date().getFullYear()} Tempus Functional Fitness. Todos los derechos reservados.
+                    © {new Date().getFullYear()} Tempus Funcional Fitness. Todos los derechos reservados.
                   </p>
 
                   <div class="flex gap-3">
@@ -193,7 +193,7 @@ import Ad from '../components/Ad.astro'
                     <a
                       href="https://wa.me/+34690854880?text=Hola!%20Me%20gustaría%20recibir%20más%20información%20sobre%20las%20clases%20de%20Tempus%20Funcional%20Fitness."
                       target="_blank"
-                      class="inline-flex items-center gap-2 px-4 py-2 rounded-4xl border-2  border-primary text-primary transition duration-300 hover:bg-primary hover:text-white"
+                      class="inline-flex items-center gap-2 px-4 py-2 rounded-4xl border-2 border-primary text-primary transition duration-300 hover:bg-primary hover:text-white"
                     >
                       Contacto
                     </a>
@@ -204,38 +204,39 @@ import Ad from '../components/Ad.astro'
           </article>
         </div>
       </div>
+    </div>
+    <Ad />
   </section>
-      <Ad/>
-</Layout>
 
-    <style>
-      /* Valores cortos para algunas clases utilitarias que usas en el proyecto */
-      .rounded-4xl {
-        border-radius: 1.25rem;
+  <style>
+    /* Valores cortos para algunas clases utilitarias que usas en el proyecto */
+    .rounded-4xl {
+      border-radius: 1.25rem;
+    }
+    .size-10 {
+      width: 2.5rem;
+      height: 2.5rem;
+    }
+    .size-15 {
+      width: 3.75rem;
+      height: 3.75rem;
+    }
+    @keyframes float-1_15s_ease-in-out_infinite_alternate {
+      0% {
+        transform: translateY(0);
       }
-      .size-10 {
-        width: 2.5rem;
-        height: 2.5rem;
+      100% {
+        transform: translateY(18px);
       }
-      .size-15 {
-        width: 3.75rem;
-        height: 3.75rem;
-      }
-      @keyframes float-1_15s_ease-in-out_infinite_alternate {
-        0% {
-          transform: translateY(0);
-        }
-        100% {
-          transform: translateY(18px);
-        }
-      }
+    }
 
-      /* Mejora de legibilidad en pantallas pequeñas */
-      @media (max-width: 640px) {
-        article.prose {
-          font-size: 0.95rem;
-          line-height: 1.6;
-        }
+    /* Mejora de legibilidad en pantallas pequeñas */
+    @media (max-width: 640px) {
+      article.prose {
+        font-size: 0.95rem;
+        line-height: 1.6;
       }
-    </style>
+    }
+  </style>
   <Whatsapp />
+</Layout>
